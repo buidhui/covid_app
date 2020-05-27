@@ -3054,42 +3054,6 @@ function Home(props) {
                     alt=""
                   />
                 </div>
-                <div className="item">
-                  <img
-                    src="assets/images/client-logo/client-logo-1.png"
-                    alt=""
-                  />
-                </div>
-                <div className="item">
-                  <img
-                    src="assets/images/client-logo/client-logo-2.png"
-                    alt=""
-                  />
-                </div>
-                <div className="item">
-                  <img
-                    src="assets/images/client-logo/client-logo-3.png"
-                    alt=""
-                  />
-                </div>
-                <div className="item">
-                  <img
-                    src="assets/images/client-logo/client-logo-4.png"
-                    alt=""
-                  />
-                </div>
-                <div className="item">
-                  <img
-                    src="assets/images/client-logo/client-logo-5.png"
-                    alt=""
-                  />
-                </div>
-                <div className="item">
-                  <img
-                    src="assets/images/client-logo/client-logo-6.png"
-                    alt=""
-                  />
-                </div>
               </div>
             </div>
           </section>

@@ -297,7 +297,7 @@ button:focus {
     margin-right: 25px;
 }
 .main_menu .navbar .nav.navbar-nav li a {
-    color: #58547e;
+    color: #01cfbe;
     font-family: quicksand, sans-serif;
     position: relative;
     font: 600 16px/90px "Quicksand", sans-serif;
@@ -545,9 +545,8 @@ button:focus {
     margin-bottom: 20px;
 }
 .menu_social li a {
-    color: #58547e;
     font-size: 24px;
-    color: #58547e;
+    color: #03cfbe;
     transition: all 300ms linear 0s;
 }
 .menu_social li a:hover {
@@ -5609,4 +5608,9 @@ blockquote {
 }
 .footer_copyright h6 span {
     font-weight: 700;
+}
+
+.client_slider {
+    display: flex;
+    flex-direction: row;
 }

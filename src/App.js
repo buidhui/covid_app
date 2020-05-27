@@ -7,12 +7,13 @@ import Header from "./components/Header";
 import Blog from "./components/Blog";
 import Tracking from "./components/Tracking";
 import Footer from "./components/Footer";
+import SingleBlog from "./components/SingleBlog";
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Header />
+        <Header dark={true} />
         <Switch>
           <Route exact path="/home">
             <Home />
@@ -22,6 +23,9 @@ function App() {
           </Route>
           <Route exact path="/blog">
             <Blog />
+          </Route>
+          <Route path="/blog/:id/">
+            <SingleBlog />
           </Route>
           <Route exact path="/tracking">
             <Tracking />
