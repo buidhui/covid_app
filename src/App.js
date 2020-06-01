@@ -1,11 +1,38 @@
 import React from "react";
 import Home from "./components/Home";
+import Prevention from "./components/Prevention";
+import Appointment from "./components/Appointment";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Header from "./components/Header";
+import Blog from "./components/Blog";
+import Tracking from "./components/Tracking";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <Switch>
+          <Route exact path="/home">
+            <Home />
+          </Route>
+          <Route exact path="/appointment">
+            <Appointment />
+          </Route>
+          <Route exact path="/blog">
+            <Blog />
+          </Route>
+          <Route exact path="/tracking">
+            <Tracking />
+          </Route>
+          <Route exact path="/prevention">
+            <Prevention />
+          </Route>
+        </Switch>
+        <Footer/>
+      </div>
+    </Router>
   );
 }
 
