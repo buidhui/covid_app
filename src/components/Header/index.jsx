@@ -18,10 +18,10 @@ function Header() {
         <div className="menu_part_lux">
           <ul className="menu_list wd_scroll">
             <li>
-              <Link to="index.html">Home</Link>
+              <Link to="home">Home</Link>
             </li>
             <li>
-              <Link to="index.html">Prevention</Link>
+              <Link to="">Prevention</Link>
             </li>
             <li>
               <Link to="appointment.html">Appointment</Link>
@@ -212,13 +212,13 @@ function Header() {
         <div className="main_menu">
           <div className="container">
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
-              <a className="navbar-brand" href="index.html">
+              <Link to="/home">
                 <img
                   src="assets/images/logo.png"
                   srcSet="assets/images/logo-2x.png 2x"
                   alt=""
                 />
-              </a>
+              </Link>
               <button
                 className="navbar-toggler"
                 type="button"
@@ -235,9 +235,9 @@ function Header() {
                 id="navbarSupportedContent"
               >
                 <ul className="nav navbar-nav ml-auto">
-                  <li className="active">
+                  {/* <li className="active">
                     <Link to="/home">Home</Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link to="/tracking">Tracking</Link>
                   </li>
