@@ -3832,6 +3832,24 @@ button:focus {
     font-size: 11px;
     color: #78749e;
 }
+
+.appoinment_form .is_active,
+.appoinment_form .is_active.animated {
+    font-weight: 700;
+}
+.appoinment_form .is_active + label,
+.appoinment_form .is_active.animated + label {
+    top: 0;
+    font-size: 11px;
+    color: #78749e;
+}
+.appoinment_form .is_active + div + label,
+.appoinment_form .is_active.animated + div + label {
+    top: 0;
+    font-size: 11px;
+    color: #78749e;
+}
+
 .appoinment_form textarea.form-control {
     height: 170px;
 }

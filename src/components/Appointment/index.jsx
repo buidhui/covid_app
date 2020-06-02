@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Appointment(props) {
+  const [form, setForm] = useState({
+    name: null,
+    email: null,
+    phone: null,
+    date: null,
+    time: null,
+    subject: null,
+  });
   return (
     <div>
       <div className="body_wrapper">
@@ -78,10 +86,14 @@ function Appointment(props) {
                     <div className="col-lg-6">
                       <div className="form-group">
                         <input
-                          className="form-control"
+                          className={`form-control ${
+                            form.name ? "is_active" : ""
+                          }`}
                           type="text"
-                          id="a_name"
-                          name="a_name"
+                          value={form.name}
+                          onChange={(e) =>
+                            setForm({ ...form, name: e.target.value })
+                          }
                           placeholder
                         />
                         <label>
@@ -93,10 +105,14 @@ function Appointment(props) {
                     <div className="col-lg-6">
                       <div className="form-group">
                         <input
-                          className="form-control"
+                          className={`form-control ${
+                            form.email ? "is_active" : ""
+                          }`}
                           type="text"
-                          id="a_email"
-                          name="a_email"
+                          value={form.email}
+                          onChange={(e) =>
+                            setForm({ ...form, email: e.target.value })
+                          }
                           placeholder
                         />
                         <label>
@@ -105,7 +121,7 @@ function Appointment(props) {
                         </label>
                       </div>
                     </div>
-                    <div className="col-lg-6">
+                    {/* <div className="col-lg-6">
                       <div className="form-group">
                         <input
                           className="form-control"
@@ -119,14 +135,18 @@ function Appointment(props) {
                           Your Skype ID
                         </label>
                       </div>
-                    </div>
+                    </div> */}
                     <div className="col-lg-6">
                       <div className="form-group">
                         <input
-                          className="form-control"
+                          className={`form-control ${
+                            form.phone ? "is_active" : ""
+                          }`}
                           type="text"
-                          id="a_number"
-                          name="a_number"
+                          value={form.phone}
+                          onChange={(e) =>
+                            setForm({ ...form, phone: e.target.value })
+                          }
                           placeholder
                         />
                         <label>
@@ -135,6 +155,22 @@ function Appointment(props) {
                         </label>
                       </div>
                     </div>
+                    <div className="col-lg-6">
+                      <div className="form-group">
+                        <input
+                          className="form-control"
+                          type="text"
+                          id="subject"
+                          name="subject"
+                          placeholder
+                        />
+                        <label>
+                          <i className="linearicons-document" />
+                          Add your subject
+                        </label>
+                      </div>
+                    </div>
+
                     <div className="col-lg-6">
                       <div
                         className="form-group input-group date"
@@ -181,53 +217,6 @@ function Appointment(props) {
                           data-target="#datetimepicker4"
                           data-toggle="datetimepicker"
                         />
-                      </div>
-                    </div>
-                    <div className="col-lg-6">
-                      <div className="form-group">
-                        <input
-                          className="form-control"
-                          type="text"
-                          id="subject"
-                          name="subject"
-                          placeholder
-                        />
-                        <label>
-                          <i className="linearicons-document" />
-                          Add your subject
-                        </label>
-                      </div>
-                    </div>
-                    <div className="col-lg-6">
-                      <div className="form-group select_conversation_inner">
-                        <h6>Choose method of conversation</h6>
-                        <div className="select_conversation">
-                          <input
-                            type="radio"
-                            name="conversation"
-                            id="voice"
-                            defaultValue="voice"
-                          />
-                          <label htmlFor="voice">Voice</label>
-                        </div>
-                        <div className="select_conversation">
-                          <input
-                            type="radio"
-                            name="conversation"
-                            id="video"
-                            defaultValue="video"
-                          />
-                          <label htmlFor="video">Video</label>
-                        </div>
-                        <div className="select_conversation">
-                          <input
-                            type="radio"
-                            name="conversation"
-                            id="chat"
-                            defaultValue="chat"
-                          />
-                          <label htmlFor="chat">Chat</label>
-                        </div>
                       </div>
                     </div>
                     <div className="col-lg-12">
