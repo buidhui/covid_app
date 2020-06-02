@@ -297,7 +297,7 @@ button:focus {
     margin-right: 25px;
 }
 .main_menu .navbar .nav.navbar-nav li a {
-    color: #58547e;
+    color:#58547d;
     font-family: quicksand, sans-serif;
     position: relative;
     font: 600 16px/90px "Quicksand", sans-serif;
@@ -432,7 +432,7 @@ button:focus {
     display: none;
 }
 .main_menu .navbar .nav.navbar-nav li.submenu .dropdown-menu .submenu .dropdown-menu li:hover a {
-    color: #01cfbe;
+    color: #58547d;
 }
 @media (min-width: 992px) {
     .main_menu .navbar .nav.navbar-nav li.submenu .dropdown-menu .submenu:hover.submenu .dropdown-menu {
@@ -443,16 +443,16 @@ button:focus {
 }
 .main_menu .navbar .nav.navbar-nav li:hover a,
 .main_menu .navbar .nav.navbar-nav li.active a {
-    color: #01cfbe;
+    color: #58547d;
 }
 .main_menu .navbar .nav.navbar-nav li:hover a:before,
 .main_menu .navbar .nav.navbar-nav li.active a:before {
     width: 23px;
-    color: #01cfbe;
+    color: #58547d;
 }
 .main_menu .navbar .nav.navbar-nav li:hover i,
 .main_menu .navbar .nav.navbar-nav li.active i {
-    color: #01cfbe;
+    color: #58547d;
 }
 @media (min-width: 992px) {
     .main_menu .navbar .nav.navbar-nav li:hover.submenu a:after {
@@ -545,9 +545,8 @@ button:focus {
     margin-bottom: 20px;
 }
 .menu_social li a {
-    color: #58547e;
     font-size: 24px;
-    color: #58547e;
+    color: #03cfbe;
     transition: all 300ms linear 0s;
 }
 .menu_social li a:hover {
@@ -3833,6 +3832,24 @@ button:focus {
     font-size: 11px;
     color: #78749e;
 }
+
+.appoinment_form .is_active,
+.appoinment_form .is_active.animated {
+    font-weight: 700;
+}
+.appoinment_form .is_active + label,
+.appoinment_form .is_active.animated + label {
+    top: 0;
+    font-size: 11px;
+    color: #78749e;
+}
+.appoinment_form .is_active + div + label,
+.appoinment_form .is_active.animated + div + label {
+    top: 0;
+    font-size: 11px;
+    color: #78749e;
+}
+
 .appoinment_form textarea.form-control {
     height: 170px;
 }
@@ -5609,4 +5626,9 @@ blockquote {
 }
 .footer_copyright h6 span {
     font-weight: 700;
+}
+
+.client_slider {
+    display: flex;
+    flex-direction: row;
 }
