@@ -241,9 +241,9 @@ function Header() {
                   <li>
                     <Link to="/tracking">Tracking</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link to="/prevention">Prevention</Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link to="/appointment">Appointment</Link>
                   </li>
@@ -254,43 +254,24 @@ function Header() {
 
                 <ul className="nav navbar-nav navbar-right">
                   <li className="checker_btn">
+                    {/* <Link to="/healthdiary">Health Diary</Link> */}
+                    <Link to="/healthdiary">
+                      <i className="linearicons-pulse" /> Health diary
+                    </Link>
+                  </li>
+                  <li className="checker_btn">
                     <a href="#">
-                      <i className="linearicons-pulse" /> Health Declare
+                      <i className="linearicons-user" /> Sign in
                     </a>
                   </li>
                 </ul>
               </div>
             </nav>
           </div>
-          <div className="right_burger">
-            <ul className="nav">
-              <li>
-                <div
-                  className="search_btn"
-                  data-toggle="modal"
-                  data-target="#exampleModal"
-                >
-                  <img src="assets/images/icon/search.png" alt="" />
-                </div>
-              </li>
-              <li>
-                <div className="menu_btn">
-                  <img src="assets/images/icon/burger.png" alt="" />
-                </div>
-              </li>
-            </ul>
-          </div>
         </div>
       </header>
-      
-      <div
-        className="modal fade search_modal"
-        id="exampleModal"
-        tabIndex={-1}
-        role="dialog"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
+
+      <div className="modal" id="exampleModal">
         <button
           type="button"
           className="close"

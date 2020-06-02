@@ -166,60 +166,6 @@ function Tracking(props) {
             </div>
           </div>
         </section>
-        <section className="app_area">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-6">
-                <div className="app_text">
-                  <h2>
-                    Get <span>epidemic</span> app!
-                  </h2>
-                  <p>
-                    Download our app now, track Coronavirus cases real-time and
-                    follow instant updates.
-                  </p>
-                  <a href="#">
-                    <img src="assets/images/apple-btn.png" alt="" />
-                  </a>
-                  <a href="#">
-                    <img src="assets/images/google-btn.png" alt="" />
-                  </a>
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <div className="app_mobile">
-                  <div className="mobile_image">
-                    <img src="assets/images/mobile-1.png" alt="" />
-                    <img src="assets/images/mobile-2.png" alt="" />
-                  </div>
-                  <ul className="corona_img nav">
-                    <li>
-                      <img src="assets/images/icon/app-virus-1.png" alt="" />
-                    </li>
-                    <li>
-                      <img src="assets/images/icon/app-virus-2.png" alt="" />
-                    </li>
-                    <li>
-                      <img src="assets/images/icon/app-virus-3.png" alt="" />
-                    </li>
-                    <li>
-                      <img src="assets/images/icon/app-virus-4.png" alt="" />
-                    </li>
-                    <li data-parallax='{"y": 100}'>
-                      <img src="assets/images/icon/app-virus-5.png" alt="" />
-                    </li>
-                    <li>
-                      <img src="assets/images/icon/app-virus-6.png" alt="" />
-                    </li>
-                    <li>
-                      <img src="assets/images/icon/app-virus-7.png" alt="" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
         <section className="subscribe_area">
           <div className="container">
             <div className="row">
