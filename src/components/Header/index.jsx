@@ -254,14 +254,14 @@ function Header() {
 
                 <ul className="nav navbar-nav navbar-right">
                   <li className="checker_btn">
-                    <a href="#">
-                      <i className="linearicons-user" /> Sign in
-                    </a>
+                    {/* <Link to="/healthdiary">Health Diary</Link> */}
+                    <Link to="/healthdiary">
+                      <i className="linearicons-pulse" /> Health diary
+                    </Link>
                   </li>
-
                   <li className="checker_btn">
                     <a href="#">
-                      <i className="linearicons-pulse" /> Hello Thanh, go to health diary
+                      <i className="linearicons-user" /> Sign in
                     </a>
                   </li>
                 </ul>
@@ -271,10 +271,7 @@ function Header() {
         </div>
       </header>
 
-      <div
-        className="modal"
-        id="exampleModal"
-      >
+      <div className="modal" id="exampleModal">
         <button
           type="button"
           className="close"

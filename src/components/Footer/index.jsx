@@ -44,7 +44,7 @@ function Footer() {
                       <div className="media-body">
                         <a href="skype:md.rocky79">
                           <h6>
-                            Skype ID: <span>epidemic.org</span>
+                            Skype ID: <span>team4.org</span>
                           </h6>
                         </a>
                       </div>
@@ -209,7 +209,7 @@ function Footer() {
             </ul>
             <h6>
               Designed with <i className="linearicons-heart" />
-              by <span>creakits</span>
+              by <span>Team 4</span>
             </h6>
           </div>
         </div>
