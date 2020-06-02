@@ -255,41 +255,25 @@ function Header() {
                 <ul className="nav navbar-nav navbar-right">
                   <li className="checker_btn">
                     <a href="#">
-                      <i className="linearicons-pulse" /> Health Declare
+                      <i className="linearicons-user" /> Sign in
+                    </a>
+                  </li>
+
+                  <li className="checker_btn">
+                    <a href="#">
+                      <i className="linearicons-pulse" /> Hello Thanh, go to health diary
                     </a>
                   </li>
                 </ul>
               </div>
             </nav>
           </div>
-          <div className="right_burger">
-            <ul className="nav">
-              <li>
-                <div
-                  className="search_btn"
-                  data-toggle="modal"
-                  data-target="#exampleModal"
-                >
-                  <img src="assets/images/icon/search.png" alt="" />
-                </div>
-              </li>
-              <li>
-                <div className="menu_btn">
-                  <img src="assets/images/icon/burger.png" alt="" />
-                </div>
-              </li>
-            </ul>
-          </div>
         </div>
       </header>
-      
+
       <div
-        className="modal fade search_modal"
+        className="modal"
         id="exampleModal"
-        tabIndex={-1}
-        role="dialog"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
       >
         <button
           type="button"
