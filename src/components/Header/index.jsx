@@ -241,9 +241,9 @@ function Header() {
                   <li>
                     <Link to="/tracking">Tracking</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link to="/prevention">Prevention</Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link to="/appointment">Appointment</Link>
                   </li>

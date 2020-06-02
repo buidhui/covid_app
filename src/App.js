@@ -2,7 +2,7 @@ import React from "react";
 import Home from "./components/Home";
 import Prevention from "./components/Prevention";
 import Appointment from "./components/Appointment";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link, Redirect } from "react-router-dom";
 import Header from "./components/Header";
 import Blog from "./components/Blog";
 import Tracking from "./components/Tracking";
@@ -15,6 +15,7 @@ function App() {
       <div className="App">
         <Header dark={true} />
         <Switch>
+          <Redirect exact from="/" to="/home" />
           <Route exact path="/home">
             <Home />
           </Route>
@@ -30,9 +31,9 @@ function App() {
           <Route exact path="/tracking">
             <Tracking />
           </Route>
-          <Route exact path="/prevention">
+          {/* <Route exact path="/prevention">
             <Prevention />
-          </Route>
+          </Route> */}
         </Switch>
         <Footer/>
       </div>
