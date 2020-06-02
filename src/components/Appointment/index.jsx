@@ -2,12 +2,12 @@ import React, { useState } from "react";
 
 function Appointment(props) {
   const [form, setForm] = useState({
-    name: null,
-    email: null,
-    phone: null,
-    date: null,
-    time: null,
-    subject: null,
+    name: "",
+    email: "",
+    phone: "",
+    date: "",
+    time: "",
+    subject: "",
   });
   return (
     <div>
@@ -26,10 +26,10 @@ function Appointment(props) {
                 data-wow-delay="0.3s"
               >
                 <li>
-                  <a href="index.html">Home</a>
+                  <a href="#">Home</a>
                 </li>
                 <li>
-                  <a href="doctors.html">Appointment</a>
+                  <a href="#">Appointment</a>
                 </li>
               </ul>
             </div>
@@ -142,7 +142,7 @@ function Appointment(props) {
                           className={`form-control ${
                             form.phone ? "is_active" : ""
                           }`}
-                          type="text"
+                          type="number"
                           value={form.phone}
                           onChange={(e) =>
                             setForm({ ...form, phone: e.target.value })
@@ -158,10 +158,14 @@ function Appointment(props) {
                     <div className="col-lg-6">
                       <div className="form-group">
                         <input
-                          className="form-control"
+                          className={`form-control ${
+                            form.subject ? "is_active" : ""
+                          }`}
                           type="text"
-                          id="subject"
-                          name="subject"
+                          value={form.subject}
+                          onChange={(e) =>
+                            setForm({ ...form, subject: e.target.value })
+                          }
                           placeholder
                         />
                         <label>
@@ -222,13 +226,17 @@ function Appointment(props) {
                     <div className="col-lg-12">
                       <div className="form-group">
                         <textarea
-                          name="a_message"
-                          id="a_message"
                           cols={30}
                           rows={10}
-                          className="form-control"
-                          defaultValue={""}
+                          className={`form-control ${
+                            form.message ? "is_active" : ""
+                          }`}
+                          value={form.message}
+                          onChange={(e) =>
+                            setForm({ ...form, message: e.target.value })
+                          }
                         />
+                        
                         <label>
                           <i className="linearicons-pencil4" />
                           Your Message
@@ -237,18 +245,7 @@ function Appointment(props) {
                     </div>
                     <div className="col-lg-12">
                       <div className="form-group checkbox_field">
-                        <div className="checkbox">
-                          <input
-                            type="checkbox"
-                            defaultValue="None"
-                            id="squared2"
-                            name="check"
-                          />
-                          <label className="l_text" htmlFor="squared2">
-                            I accept the <span>Privacy Policy</span> and the
-                            <span>Term of Use.</span>
-                          </label>
-                        </div>
+                        
                         <button
                           type="submit"
                           className="green_btn"
